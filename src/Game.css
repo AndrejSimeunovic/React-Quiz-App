@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.game-container {
+    border: 1px solid;
+    background-color: aliceblue;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.answers-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(2, 100px);
+    gap: 10px;
+}
+
+.score {
+    color: aliceblue;
+    font-size: xx-large;
+}
+
+.answer {
+    background-color: aqua;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.correct {
+    background-color: green;
+}
+
+.incorrect {
+    background-color: red;
+}
+
+button:disabled {
+    color: black;
+}
+
+.nextBtn {
+    padding: 10px;
+    background-color: rgb(255, 208, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.nextBtn:hover {
+    background-color: rgb(217, 255, 0);
+}
+
+.finished {
+    font-size: xx-large;
+}
+
+.startOverBtn {
+    padding: 10px;
+    background-color: aqua;
+    cursor: pointer
+}
+
+.startOverBtn:hover {
+    background-color: aquamarine
+}
