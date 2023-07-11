@@ -72,7 +72,7 @@ button:disabled {
     background-color: aquamarine
 }
 
-@media(width < 650px) {
+@media(width < 750px) {
     .answers-grid {
         grid-template-columns: repeat(1, 300px);
 
