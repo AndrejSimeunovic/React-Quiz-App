@@ -19,7 +19,6 @@
 .answers-grid {
     display: grid;
     grid-template-columns: repeat(2, 300px);
-    grid-template-rows: repeat(2, 100px);
     gap: 10px;
 }
 
@@ -32,6 +31,7 @@
     background-color: aqua;
     font-size: x-large;
     cursor: pointer;
+    height: 100px;
 }
 
 .correct {
@@ -69,4 +69,11 @@ button:disabled {
 
 .startOverBtn:hover {
     background-color: aquamarine
+}
+
+@media(width < 650px) {
+    .answers-grid {
+        grid-template-columns: repeat(1, 300px);
+
+    }
 }

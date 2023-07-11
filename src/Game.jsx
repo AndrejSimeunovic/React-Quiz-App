@@ -22,6 +22,11 @@ export default function Game({ data }) {
       setScore((curr) => curr + 1);
   }
 
+  function restart() {
+    setQuestionNbr(1)
+    setScore(0)
+  }
+
   function checkAnswer(ans) {
     setUserClicked(true);
     setUserAnswer(ans);
@@ -56,8 +61,11 @@ export default function Game({ data }) {
           <>
             <div className="finished">Game Finished!</div>
             <div className="finished">Your final score: {score}</div>
+            <button className="startOverBtn" onClick={() => restart()}>
+              Retake Quiz
+            </button>
             <button className="startOverBtn" onClick={() => location.reload()}>
-              Start over
+              Back to home page
             </button>
           </>
         ) : (
