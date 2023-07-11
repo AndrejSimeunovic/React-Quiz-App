@@ -8,6 +8,10 @@ body {
     background-color: rgb(82, 80, 80);
 }
 
+header {
+    color: white;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -17,6 +21,7 @@ form {
 input,
 select {
     padding: 10px;
+    color: black;
 }
 
 label {

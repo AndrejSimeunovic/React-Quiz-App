@@ -59,6 +59,7 @@ button:disabled {
 
 .finished {
     font-size: xx-large;
+    color: white;
 }
 
 .startOverBtn {
