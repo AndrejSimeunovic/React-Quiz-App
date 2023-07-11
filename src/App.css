@@ -8,10 +8,6 @@ body {
     background-color: rgb(82, 80, 80);
 }
 
-header {
-    color: white;
-}
-
 form {
     display: flex;
     flex-direction: column;
@@ -41,6 +37,7 @@ option {
     align-self: center;
     font-size: xx-large;
     margin-bottom: 100px;
+    color: white;
 }
 
 .submitBtn {
