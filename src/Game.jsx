@@ -4,7 +4,7 @@ import Question from "./Question";
 import fetchData from "./Api";
 import { FidgetSpinner } from "react-loader-spinner";
 
-export default function Game({ data }) {
+export default function Game({ data, reloadPage }) {
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(true);
   const [questionNbr, setQuestionNbr] = useState(1);
@@ -64,7 +64,7 @@ export default function Game({ data }) {
             <button className="startOverBtn" onClick={() => restart()}>
               Retake Quiz
             </button>
-            <button className="startOverBtn" onClick={() => location.reload()}>
+            <button className="startOverBtn" onClick={() => reloadPage()}>
               Back to home page
             </button>
           </>

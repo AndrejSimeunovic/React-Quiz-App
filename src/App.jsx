@@ -26,10 +26,14 @@ function App() {
   function checkAny(value) {
     return value === "any" ? "" : value;
   }
+
+  function reloadPage() {
+    setIsGenerated(false);
+  }
   return (
     <>
       {isGenerated ? (
-        <Game data={data} />
+        <Game data={data} reloadPage={reloadPage} />
       ) : (
         <form onSubmit={sendData}>
           <div className="header">REACT QUIZ</div>
