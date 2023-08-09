@@ -54,3 +54,9 @@ option {
 button {
     color: black;
 }
+
+@media screen {
+    input {
+        font-size: 16px;
+    }
+}
